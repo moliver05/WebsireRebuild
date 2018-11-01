@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { DriverComponent } from './driver/driver.component';
-import { RiderComponent } from './rider/rider.component';
+import { Riders } from './riders.model';
+import { Drivers} from './drivers.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 

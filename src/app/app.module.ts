@@ -1,3 +1,4 @@
+import { LyftService } from './lyft.service';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { masterFirebaseConfig } from './api-keys';
@@ -41,7 +42,7 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [LyftService],
   bootstrap: [AppComponent]
 })
 
