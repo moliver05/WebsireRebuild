@@ -18,7 +18,7 @@ li {
 
 
 .driverContent {
-    display: none;
+    /* display: none; */
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
@@ -29,17 +29,20 @@ li {
 }
 
 .driverContent a:hover {
-    background-color: red
+    background-color: gold;
 } 
-
 
 #logo {
     height: 100px;
     width: 100px;
     float: left;
-    color: blue;
 }
 
+.footerPage {
+   bottom: 0;
+   left: 0;
+   position: absolute;
+}
 
 #navigation{
     background-color: #9be5f3;
