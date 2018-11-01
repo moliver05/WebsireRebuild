@@ -14,6 +14,7 @@ export class LyftService {
         this.drivers = database.list('drivers');
     }
 
+    // Riders
     getRiders() {
         return this.riders;
     }
@@ -27,25 +28,29 @@ export class LyftService {
     updateRiders(localUpdatedRiders) {
         var albumEntryInFirebase = this.getRidersById(localUpdatedRiders.$key);
         albumEntryInFirebase.update({
-            title: localUpdatedRiders.name,
-            artist: localUpdatedRiders.artist,
-            description: localUpdatedAlbum.description
+            name: localUpdatedRiders.name,
+            car: localUpdatedRiders.car,
+            description: localUpdatedRiders.description,
+            rides: localUpdatedRiders.rides
         });
     }
-    deleteAlbum(localAlbumToDelete) {
-        var albumEntryInFirebase = this.getAlbumById(localAlbumToDelete.$key);
+
+    deleteDrivers(localDriversToDelete) {
+        var albumEntryInFirebase = this.getDriversById(localDriversToDelete.$key);
         albumEntryInFirebase.remove();
     }
 
+
+    // Drivers
     getAlbums() {
         return this.albums;
     }
-    addAlbum(newAlbum: Album) {
-        this.albums.push(newAlbum);
+    addAlbum(newDrivers: Drivers) {
+        this.drivers.push(newdriver);
     }
 
-    getAlbumById(albumId: string) {
-        return this.database.object('albums/' + albumId);
+    getDriversById(driversId: string) {
+        return this.database.object('drivers/' + driversId);
     }
     updateAlbum(localUpdatedAlbum) {
         var albumEntryInFirebase = this.getAlbumById(localUpdatedAlbum.$key);

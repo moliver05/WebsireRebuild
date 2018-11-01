@@ -1,4 +1,4 @@
 
 export class Rider {
-    constructor(public title: string, public agent: string, public description: string, public money: number) {}
+    constructor(public name: string, public car: string, public description: string, public money: number) {}
 }
