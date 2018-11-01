@@ -2,11 +2,22 @@
 
 } */
 
-ul {
+li {
     list-style-type: none;
 }
 
-.driveContent {
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+  
+  .navbar-fixed-top.scrolled .nav-link {
+    color:#555;
+  }
+
+
+
+.driverContent {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -17,6 +28,11 @@ ul {
     font-size: 20px;
 }
 
+.driverContent a:hover {
+    background-color: red
+} 
+
+
 #logo {
     height: 100px;
     width: 100px;
@@ -24,7 +40,7 @@ ul {
     color: blue;
 }
 
-#menuBar {
-    padding-bottom: 20px;
-}
 
+#navigation{
+    background-color: #9be5f3;
+}
