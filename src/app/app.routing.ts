@@ -19,7 +19,7 @@ const appRoutes: Routes = [
         component: LogInComponent
     },
     {
-        path: 'rider',
+        path: 'rider/:id',
         component: RiderComponent
     },
     {
@@ -27,7 +27,7 @@ const appRoutes: Routes = [
         component: RiderDetailComponent
     },
     {
-        path: 'driver',
+        path: 'driver/:id',
         component: DriverComponent
     },
     {

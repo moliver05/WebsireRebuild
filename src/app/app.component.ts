@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs';
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  riders: Observable<any []>;
+  drivers: Observable<any[]>;
+  title = 'Lyft';
+  constructor(db: AngularFireDatabase) {
+    this.riders = db.list('riders');
+    this.drivers = db.list('drivers');
+    }
 }
