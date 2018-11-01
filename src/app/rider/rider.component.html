@@ -1,3 +1,18 @@
-<p>
-  rider works!
-</p>
+<div class="col-md-12" style="border: solid burlywood"><h2>Riders</h2></div>
+
+<div *ngFor="let rider of riders | async">
+  <table> 
+    <tr>
+      <th>Name</th>
+      <th>Car</th>
+      <th>Description</th>
+      <th>Money Earned</th>
+    </tr>
+    <tr>
+      <td (click)="goToDetailPage(rider)"><em>{{rider.title}}</em></td>
+      <td><em>{{rider.car}</em></td>
+      <td><em>{{rider.description}}</em></td>
+      <td><em>{{rider.money}}</em></td>
+    </tr>
+  </table>
+</div>

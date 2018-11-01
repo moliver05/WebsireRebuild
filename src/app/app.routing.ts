@@ -19,19 +19,19 @@ const appRoutes: Routes = [
         component: LogInComponent
     },
     {
-        path: 'rider/:id',
+        path: 'riders',
         component: RiderComponent
     },
     {
-        path: 'rider-detail',
+        path: 'riders/:id',
         component: RiderDetailComponent
     },
     {
-        path: 'driver/:id',
+        path: 'drivers',
         component: DriverComponent
     },
     {
-        path: 'driver-detail',
+        path: 'drivers/:id',
         component: DriverDetailComponent
     }, 
 ];
