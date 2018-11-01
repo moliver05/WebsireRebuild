@@ -18,8 +18,8 @@ export class LyftService {
     getRiders() {
         return this.riders;
     }
-    addRiders(newRider: Riders) {
-        this.riders.push(newRider);
+    addRiders(newRiders: Riders) {
+        this.riders.push(newRiders);
     }
 
     getRidersById(ridersId: string) {
@@ -35,33 +35,34 @@ export class LyftService {
         });
     }
 
-    deleteDrivers(localDriversToDelete) {
-        var albumEntryInFirebase = this.getDriversById(localDriversToDelete.$key);
+    deleteRiders(localRidersToDelete) {
+        var albumEntryInFirebase = this.getDriversById(localRidersToDelete.$key);
         albumEntryInFirebase.remove();
     }
 
 
     // Drivers
-    getAlbums() {
-        return this.albums;
+    getDrivers() {
+        return this.drivers;
     }
-    addAlbum(newDrivers: Drivers) {
-        this.drivers.push(newdriver);
+    addDrivers(newDrivers: Drivers) {
+        this.drivers.push(newDrivers);
     }
 
     getDriversById(driversId: string) {
         return this.database.object('drivers/' + driversId);
     }
-    updateAlbum(localUpdatedAlbum) {
-        var albumEntryInFirebase = this.getAlbumById(localUpdatedAlbum.$key);
+    updateDrivers(localUpdatedDrivers) {
+        var albumEntryInFirebase = this.getDriversById(localUpdatedDrivers.$key);
         albumEntryInFirebase.update({
-            title: localUpdatedAlbum.title,
-            artist: localUpdatedAlbum.artist,
-            description: localUpdatedAlbum.description
+            name: localUpdatedDrivers.name,
+            car: localUpdatedDrivers.car,
+            description: localUpdatedDrivers.description,
+            money: localUpdatedDrivers.money
         });
     }
-    deleteAlbum(localAlbumToDelete) {
-        var albumEntryInFirebase = this.getAlbumById(localAlbumToDelete.$key);
+    deleteDrivers(localDriversToDelete) {
+        var albumEntryInFirebase = this.getDriversById(localDriversToDelete.$key);
         albumEntryInFirebase.remove();
     }
 }
