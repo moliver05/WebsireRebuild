@@ -12,14 +12,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-
+ 
   <app-root></app-root>
   
   <!-- // scroll function -->
 <script> 
 $(function () {
     $(document).scroll(function () {
-      var $nav = $(".navbar-fixed-top");
+      var $nav = $(".topnav");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });</script>
@@ -114,17 +114,24 @@ $(function () {
         <img class="w3-margin-right" id="google" src=".././assets/img/google.svg">
         <img id="amazon" src=".././assets/img/amazon.svg">
       </span>
+    </div>
 
-    <div id="footerTwo">
-      <h6><a href="https://www.lyft.com/terms">Terms</a></h6>
-      <h6><a href="https://www.lyft.com/privacy">Privacy</a></h6>
-      <h6>&#169;2018 Lyft, Inc</h6>  
-      <a href="https://twitter.com/lyft"><i class="fa fa-twitter fa-2x"></a></i>
-      <a href="https://www.facebook.com/lyft"><i class="fa fa-facebook fa-2x"></a></i>
-      <a href="https://www.instagram.com/lyft"><i class="fa fa-instagram fa-2x"></i></a>
+    <div id="footerTwo" class="w3-container w3-display-bottomright">
+      <ul>
+      <li><h6><a href="https://www.lyft.com/terms">Terms</a></h6></li>
+
+      <li><h6><a href="https://www.lyft.com/privacy">Privacy</a></h6></li>
+
+      <li><h6>&#169;2018 Lyft, Inc</h6></li>
+      <li><a href="https://twitter.com/lyft"><i class="fa fa-twitter fa-2x"></a></i></li>
+
+      <li><a href="https://www.facebook.com/lyft"><i class="fa fa-facebook fa-2x"></a></i></li>
+
+      <li><a href="https://www.instagram.com/lyft"><i class="fa fa-instagram fa-2x"></i></a></li>
+    </ul>
     </div>
-    </div>
-    <!--  -->
   </footer>
+    <!--  -->
+
 </body>
 </html>

@@ -1,13 +1,10 @@
 <header>
-  <nav id="navigation" class="navbar navbar-fixed-top">
-    <div class="w3-row  w3-quarter w3-container">
-      <a routerLink=""><img id="lyftLogo" src=".././assets/img/icon_lyft.png"></a>
-    </div>
-    <!--  -->
-  
-  </nav>
+    <div class="topnav">
+        <a routerLink=""><img id="lyftLogo" src=".././assets/img/icon_lyft.png"></a>
+          <div class="topnav-right w3-margin-right">
+            <a class="w3-margin-top" routerLink="drivers"><h3>DRIVER</h3></a>
+            <a class="w3-margin-top" routerLink="riders"><h3>RIDER</h3></a>
+            <a class="w3-margin-top" routerLink="login"><h3>LOG IN</h3></a>
+          </div>
+        </div>
 </header>
-<br><br><br><br><br>
-
-<!-- menu -->
-<router-outlet></router-outlet>

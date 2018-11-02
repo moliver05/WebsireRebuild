@@ -3,6 +3,7 @@
     background-color: #9be5f3 !important;
 } */
 
+/* footer */
 #apple {
     height: 150px;
     width: 150px;
@@ -35,12 +36,12 @@
 
 #footerPage {
     bottom: 0;
+    right: 0;
     width: 100%;
     background-color: white;
     color: midnightblue;
     text-align: justify;
-    display: flex;
-    flex-wrap: wrap;  
+    position: fixed;  
  }
 
  .w3-quarter a:hover {
@@ -48,20 +49,20 @@
     text-decoration-line: none;
    }
 
-#footerTwo {
-  bottom: 0;
-  right: 0;
-  vertical-align: middle;
-}
-
 #footerTwo a:hover {
     color: pink;
-    text-decoration-line: none;
+    text-decoration-line: none; 
 }
 
+#footerTwo {
+    padding-top: 100px;
+}
  li {
+    display: inline-block;
     list-style-type: none;
+   
 }
 h5 {
     font-weight: bold;
 }
+/*  */

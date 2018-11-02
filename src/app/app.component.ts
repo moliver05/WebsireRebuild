@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
+// tslint:disable-next-line:import-blacklist
 import { Observable } from 'rxjs';
 
 

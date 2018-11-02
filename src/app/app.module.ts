@@ -9,7 +9,7 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 
-import { WelcomeComponent } from './welcome/welcome.component';
+
 import { LogInComponent } from './login/login.component';
 import { RiderDetailComponent } from './rider-detail/rider-detail.component';
 import { DriverDetailComponent } from './driver-detail/driver-detail.component';
@@ -27,7 +27,6 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
     DriverComponent,
     RiderComponent,
     LogInComponent,
