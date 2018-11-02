@@ -1,29 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+/* body {
     background-color: #9be5f3 !important;
-}
+} */
 
 #apple {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     vertical-align: middle;
 }
 
 #amazon {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     vertical-align: middle;
 }
 
 #windows {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     vertical-align: middle;
 }
 
 #google {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     vertical-align: middle;
 }
 
@@ -37,7 +37,7 @@ body {
     bottom: 0;
     width: 100%;
     background-color: white;
-    color: indigo;
+    color: midnightblue;
     text-align: justify;
     display: flex;
     flex-wrap: wrap;  
@@ -46,9 +46,18 @@ body {
  .w3-quarter a:hover {
     color: pink;
     text-decoration-line: none;
-   
    }
-   
+
+#footerTwo {
+  bottom: 0;
+  right: 0;
+  vertical-align: middle;
+}
+
+#footerTwo a:hover {
+    color: pink;
+    text-decoration-line: none;
+}
 
  li {
     list-style-type: none;
