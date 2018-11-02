@@ -1,67 +1,14 @@
 /* footer page */
-.dropbtn {
-    display: inline;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
 
-li {
-    list-style-type: none;
-}
-h5 {
-    font-weight: bold;
-}
-.dropbtn:hover, .dropbtn:focus {
-    background-color: lightskyblue;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-    background-color: aliceblue;
-}
+li {list-style-type: none;}
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: fixed;
-    margin-right: 100px;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+h5 {font-weight: bold;}
 
 #downloadIcons {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -20px;
 }
-
-#footerPage {
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: indigo;
-    text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 100px;
- }
-
 
 /* Navbar */
 .navbar-fixed-top.scrolled {
@@ -78,41 +25,19 @@ h5 {
 }
 
 #lyftLogo {
-    height: 75px;
-    width: 75px;
+    height: 85px;
+    width: 85px;
     float: left;
 }
 
 #navigation{
     background-color: #9be5f3;
     position: fixed;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    margin: 5px; 
 }
 
-#apple {
-    height: 100px;
-    width: 180px;
-    vertical-align: middle;
-}
 
-#amazon {
-    height: 100px;
-    width: 180px;
-    vertical-align: middle;
-}
 
-#windows {
-    height: 100px;
-    width: 180px;
-    vertical-align: middle;
-}
 
-#google {
-    height: 100px;
-    width: 180px;
-    vertical-align: middle;
-}
-
-#menuLogo {
-    margin-left: 230px;
-
-}

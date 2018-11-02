@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #9be5f3 !important;
+}
+
+#apple {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+#amazon {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+#windows {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+#google {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+#downloadIcons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+}
+
+#footerPage {
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: indigo;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;  
+ }
+
+ .w3-quarter a:hover {
+    color: pink;
+    text-decoration-line: none;
+   
+   }
+   
+
+ li {
+    list-style-type: none;
+}
+h5 {
+    font-weight: bold;
+}
