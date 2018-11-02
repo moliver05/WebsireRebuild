@@ -41,12 +41,16 @@ li {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
-/* 
-.footerPage {
-    bottom: 0;
+
+#footerPage {
+    position: fixed;
     left: 0;
-    position: absolute;
- } */
+    bottom: 0;
+    width: 100%;
+    background-color: lightcyan;
+    color: black;
+    text-align: justify;
+ }
 
 
 /* Navbar */
@@ -60,11 +64,12 @@ li {
   }
 
 #logo {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     float: left;
 }
 
 #navigation{
     background-color: #9be5f3;
+    position: fixed;
 }
