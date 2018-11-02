@@ -26,5 +26,5 @@ export class RiderComponent implements OnInit {
 
   goToDetailPage(clickedRiders) {
     this.router.navigate(['riders', clickedRiders.$key]);
-  };
+  }
 }
