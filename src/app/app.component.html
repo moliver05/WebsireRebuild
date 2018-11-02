@@ -1,10 +1,21 @@
 <header>
   <nav id="navigation" class="navbar navbar-fixed-top">
     <div class="w3-row  w3-threequarter w3-container">
-      <a routerLink=""><img id="logo" src=".././assets/img/icon_lyft.png"></a>
+      <a routerLink=""><img id="lyftLogo" src=".././assets/img/icon_lyft.png"></a>
     </div>
-    <div class="w3-quarter w3-container w3-margin-top">
-      <i class="fa fa-bars fa-3x" style="float: right"></i>
+    <!--  -->
+    <div class="dropdown">
+      <div id="menuLogo" class="w3-row w3-quarter w3-container w3-margin-top">
+       <i class="fa fa-bars fa-3x"></i>
+        <h2 class="dropbtn" style="display: none">I</h2>
+        <div class="dropdown-content">
+          <ul>
+            <li><a routerLink="login">Log In</a></li>
+            <li><a routerLink="riders">Rider</a></li>
+            <li><a routerLink="drivers">Driver</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
 </header>
@@ -18,104 +29,96 @@
 <br>
 <footer id="footerPage">
   <!-- Driver Page -->
-  <div class="dropdown">
-      <div class="w3-row w3-container">
-      <h3 class="dropbtn">DRIVER</h3>
-      <div class="dropdown-content w3-light-grey">
-        <ul>
-          <li><a href="https://www.lyft.com/driver">Became A Driver</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driver/why-drive-with-lyft">Why left</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driver/why-drive-with-lyft">Cities</a></li>
-          <br>
-          <li><a href="https://help.lyft.com/hc/categories/115002009967-Driving-with-Lyft">Help</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/expressdrive">Express Drive</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driver-application-requirements">Application
-            Requirements</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driver-bonus">Bonus</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driver-pay">Earnings</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driving-jobs">Jobs</a></li>
-          <br>
-          <li><a href="https://thehub.lyft.com/">Hub</a></li>
-        </ul>
-        </div>
-    </div>
+  <div class="w3-row w3-quarter w3-container">
+    <h5>DRIVER</h5>
+    <br>
+    <ul>
+      <li><a href="https://www.lyft.com/driver">Became A Driver</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driver/why-drive-with-lyft">Why left</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driver/why-drive-with-lyft">Cities</a></li>
+      <br>
+      <li><a href="https://help.lyft.com/hc/categories/115002009967-Driving-with-Lyft">Help</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/expressdrive">Express Drive</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driver-application-requirements">Application
+          Requirements</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driver-bonus">Bonus</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driver-pay">Earnings</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driving-jobs">Jobs</a></li>
+      <br>
+      <li><a href="https://thehub.lyft.com/">Hub</a></li>
+    </ul>
   </div>
 
   <!-- Rider -->
-  <div class="dropdown">
-      <div class="w3-row w3-container">
-      <h3 class="dropbtn">RIDER</h3>
-      <div class="dropdown-content w3-light-grey">
-        <ul>
-          <li><a href="https://www.lyft.com/rider">Sign Up To Ride</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/rider/business">Business Profile</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driver/why-drive-with-lyft">Cities</a></li>
-          <br>
-          <li><a href="https://help.lyft.com/hc/categories/115002009967-Driving-with-Lyft">Help</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/events">Events</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driver-application-requirements">Application
-              Requirements</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driver-bonus">Bonus</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driver-pay">Earnings</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/driving-jobs">Jobs</a></li>
-          <br>
-          <li><a href="https://thehub.lyft.com/">Hub</a></li>
-        </ul>
-      </div>
-    </div>
+
+  <div class="w3-row w3-quarter w3-container">
+    <h5>RIDER</h5>
+    <br>
+    <ul>
+      <li><a href="https://www.lyft.com/rider">Sign Up To Ride</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/rider/business">Business Profile</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driver/why-drive-with-lyft">Cities</a></li>
+      <br>
+      <li><a href="https://help.lyft.com/hc/categories/115002009967-Driving-with-Lyft">Help</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/events">Events</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driver-application-requirements">Application
+          Requirements</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driver-bonus">Bonus</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driver-pay">Earnings</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/driving-jobs">Jobs</a></li>
+      <br>
+      <li><a href="https://thehub.lyft.com/">Hub</a></li>
+    </ul>
   </div>
 
-<!-- Lyft -->
-<div class="dropdown">
-    <div class="w3-row w3-container">
-    <h3 class="dropbtn">LYFT</h3>
-    <div class="dropdown-content w3-light-grey">
-        <ul>
-          <li><a href="https://www.lyft.com/careers">Careers</a></li>
-          <br>
-          <li><a href="https://www.lyftbusiness.com/">Business</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/self-driving-vehicles">Self-Driving</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/developers">Developers</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/safety">Safety</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/scooters">Scooters</a></li>
-          <br>
-          <li><a href="https://www.lyft.com/press">Press</a></li>
-        </ul>
-      </div>
-    </div>
+  <!-- Lyft -->
+
+  <div class="w3-row w3-quarter w3-container">
+    <h5>LYFT</h5>
+    <br>
+    <ul>
+      <li><a href="https://www.lyft.com/careers">Careers</a></li>
+      <br>
+      <li><a href="https://www.lyftbusiness.com/">Business</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/self-driving-vehicles">Self-Driving</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/developers">Developers</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/safety">Safety</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/scooters">Scooters</a></li>
+      <br>
+      <li><a href="https://www.lyft.com/press">Press</a></li>
+    </ul>
   </div>
+
 
   <!-- Download -->
-  <div class="dropdown">
-      <div class="w3-row w3-container">
-      <h3 class="dropbtn">DOWNLOAD</h3>
-      <div class="dropdown-content w3-light-grey">
-          <ul>
-           <li><img id="apple" src=".././assets/img/apple.svg"></li>
-           <li><img id="windows" src=".././assets/img/windows.svg"></li>
-           <li><img id="google" src=".././assets/img/google.svg"></li>
-           <li><img id="amazon" src=".././assets/img/amazon.svg"></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-<!--  -->
+
+  <div class="w3-row w3-quarter container">
+    <h5>DOWNLOAD</h5>
+    <span id="downloadIcons">
+      <img id="apple" src=".././assets/img/apple.svg">
+      <img id="windows" src=".././assets/img/windows.svg">
+      <br>
+      <img id="google" src=".././assets/img/google.svg">
+      <img id="amazon" src=".././assets/img/amazon.svg">
+    </span>
+  </div>
+  <!--  -->
 </footer>
