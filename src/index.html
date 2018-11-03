@@ -16,14 +16,14 @@
   <app-root></app-root>
   
   <!-- // scroll function -->
-<script> 
-$(function () {
+  <script>
+  $(function () {
     $(document).scroll(function () {
-      var $nav = $(".topnav");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      var $div = $("topnav");
+      $div.toggleClass('scrolled', $(this).scrollTop() > $div.height());
     });
-  });</script>
-
+  });
+</script>
 
   <!--  -->
  <footer class="w3-row" id="footerPage">
