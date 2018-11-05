@@ -4,6 +4,15 @@
           <div class="topnav-right w3-margin-right">
             <a class="w3-margin-top" routerLink="drivers"><h3>DRIVER</h3></a>
             <a class="w3-margin-top" routerLink="riders"><h3>RIDER</h3></a>
+            <ul>
+            <li *ngIf="isLoggedIn"> 
+              <a>{{userName}}</a>
+              <a (click)="logout()">Log out</a>
+            </li>
+            <li *ngIf ="!isLoggedIn">
+              <a (click)="login()">Log in</a>
+            </li>
+            </ul>
           </div>
         </div>
 </header>

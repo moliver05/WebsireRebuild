@@ -162,7 +162,7 @@ h5 {
   color: midnightblue;
   text-align: justify;
   position: fixed;  
-  z-index: -1;
+  z-index: 1;
 }
 
 .w3-quarter a:hover {
