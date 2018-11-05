@@ -1,3 +1,19 @@
-<p>
-  driver works!
-</p>
+
+<br><br><br>
+<div class="col-md-12" style="border: solid burlywood"><h2>Drivers</h2></div>
+<div *ngFor="let driver of drivers | async">
+  <table> 
+    <tr>
+      <th>Name</th>
+      <th>Car</th>
+      <th>Description</th>
+      <th>Money Earned</th>
+    </tr>
+    <tr>
+      <td (click)="goToDetailPage(driver)"><em>{{driver.title}}</em></td>
+      <td><em>{{driver.car}</em></td>
+      <td><em>{{driver.description}}</em></td>
+      <td><em>{{driver.money}}</em></td>
+    </tr>
+  </table>
+</div>

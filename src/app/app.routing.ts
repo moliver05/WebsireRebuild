@@ -2,21 +2,22 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { LogInComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 import { RiderDetailComponent } from './rider-detail/rider-detail.component';
 import { DriverDetailComponent } from './driver-detail/driver-detail.component';
 import { DriverComponent } from './driver/driver.component';
 import { RiderComponent } from './rider/rider.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 const appRoutes: Routes = [
     {
         path: '',
-        component: AppComponent
+        component: WelcomeComponent
     },
     {
-        path: 'login',
-        component: LogInComponent
+        path: 'admin',
+        component: AdminComponent
     },
     {
         path: 'riders',

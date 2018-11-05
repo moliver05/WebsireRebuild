@@ -9,12 +9,12 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 
-
-import { LogInComponent } from './login/login.component';
 import { RiderDetailComponent } from './rider-detail/rider-detail.component';
 import { DriverDetailComponent } from './driver-detail/driver-detail.component';
 import { DriverComponent } from './driver/driver.component';
 import { RiderComponent } from './rider/rider.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 export const firebaseConfig = {
@@ -29,9 +29,10 @@ export const firebaseConfig = {
     AppComponent,
     DriverComponent,
     RiderComponent,
-    LogInComponent,
     RiderDetailComponent,
     DriverDetailComponent,
+    WelcomeComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
