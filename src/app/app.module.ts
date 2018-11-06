@@ -17,9 +17,11 @@ import { DriverComponent } from './driver/driver.component';
 import { RiderComponent } from './rider/rider.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AdminComponent } from './admin/admin.component';
-import { PublicComponent } from './public/public.component';
-import { PrivateComponent } from './private/private.component';
+
+
 import { AuthGuard } from './auth-guard.service';
+import { EditRiderComponent } from './edit-rider/edit-rider.component';
+import { EditDriverComponent } from './edit-driver/edit-driver.component';
 
 
 export const firebaseConfig = {
@@ -38,8 +40,10 @@ export const firebaseConfig = {
     DriverDetailComponent,
     WelcomeComponent,
     AdminComponent,
-    PublicComponent,
-    PrivateComponent,
+   
+    EditRiderComponent,
+    EditDriverComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [AuthGuard, AuthenticationService],
+  providers: [AuthGuard, AuthenticationService, LyftService],
   bootstrap: [AppComponent]
 })
 

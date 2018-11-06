@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PublicComponent } from './public.component';
+import { EditDriverComponent } from './edit-driver.component';
 
-describe('PublicComponent', () => {
-  let component: PublicComponent;
-  let fixture: ComponentFixture<PublicComponent>;
+describe('EditDriverComponent', () => {
+  let component: EditDriverComponent;
+  let fixture: ComponentFixture<EditDriverComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PublicComponent ]
+      declarations: [ EditDriverComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PublicComponent);
+    fixture = TestBed.createComponent(EditDriverComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

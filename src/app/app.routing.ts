@@ -8,7 +8,6 @@ import { DriverDetailComponent } from './driver-detail/driver-detail.component';
 import { DriverComponent } from './driver/driver.component';
 import { RiderComponent } from './rider/rider.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { PublicComponent } from './public/public.component';
 
 
 const appRoutes: Routes = [
@@ -16,10 +15,7 @@ const appRoutes: Routes = [
         path: '',
         component: WelcomeComponent
     },
-    {
-        path: 'public',
-        component: PublicComponent
-    },
+    
     {
         path: 'admin',
         component: AdminComponent

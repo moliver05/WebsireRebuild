@@ -97,10 +97,15 @@ h3 {
   width: 100%;
   background-color: white;
   color: midnightblue;
-  text-align: justify;
-  position: fixed;  
+  text-align: center;
+  position: relative;  
   z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -14px;
+  margin-right: -14px;
 }
+
 
 .w3-quarter a:hover {
   color: pink;
@@ -109,11 +114,15 @@ h3 {
 
 #footerTwo a:hover {
   color: pink;
-  text-decoration-line: none; 
+  text-decoration-line: none;
 }
 
 #footerTwo {
   padding-top: 100px;
+  margin-top: 50px;
+  margin-right: 100px;
+  position: relative;
+  float: right;
 }
 li {
   display: inline-block;

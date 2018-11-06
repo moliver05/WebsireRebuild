@@ -1,3 +1,6 @@
-<p>
-  rider-detail works!
-</p>
+<div>
+    <h2>{{(riderToDisplay | async)?.name}</h2>
+    <h3>{{(riderToDisplay | async)?.car}}</h3>
+    <h4>{{(riderToDisplay | async)?.description}}</h4>
+    <p>{{(riderToDisplay | async)?.money}</p>
+  </div>

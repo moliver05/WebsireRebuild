@@ -1,0 +1,19 @@
+<h4>Edit Driver</h4>
+
+<label>Driver Name:</label>
+<input [(ngModel)]="selectedDriver.name">
+<hr>
+
+<label>New Driver Artist:</label>
+<input [(ngModel)]="selectedDriver.car">
+<hr>
+
+<label>New Driver Description:</label>
+<input [(ngModel)]="selectedDriver.description">
+<br>
+
+<label>Money Earned:</label>
+<input [(ngModel)]="selectedDriver.money">
+<br>
+<button (click)="beginUpdatingDriver(selectedDriver)">Update</button>
+<button (click)="beginDeletingDriver(selectedDriver)">Delete</button>
