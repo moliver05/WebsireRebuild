@@ -40,7 +40,6 @@ export const firebaseConfig = {
     DriverDetailComponent,
     WelcomeComponent,
     AdminComponent,
-   
     EditRiderComponent,
     EditDriverComponent,
 

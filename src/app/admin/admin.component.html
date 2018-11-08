@@ -32,5 +32,39 @@
     </div>
   </div>
   
+  <hr>
 
-    <app-welcome></app-welcome>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add New Rider</h3>
+    </div>
+    <div class="panel-body">
+      <div>
+        <div>
+          <label>Driver Name:</label>
+          <br>
+          <input #newName>
+        </div>
+  
+        <div>
+            <label>Car:</label>
+            <br>
+            <input #newCar>
+          </div>
+
+        <div>
+          <label>Description:</label>
+          <br>
+          <input #newDescription>
+        </div>
+  
+        <div>
+          <label>Money earned:</label>
+          <br>
+          <textarea #newMoney></textarea>
+        </div>
+        <button (click)="submitForm(newName.value, newCar.value, newDescription.value, newMoney.value); newName.value=''; newCar.value=''; newDescription.value=''; newMoney.value=''">Add</button>
+      </div>
+    </div>
+  </div>
+  

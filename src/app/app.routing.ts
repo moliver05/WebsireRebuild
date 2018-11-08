@@ -15,7 +15,6 @@ const appRoutes: Routes = [
         path: '',
         component: WelcomeComponent
     },
-    
     {
         path: 'admin',
         component: AdminComponent
