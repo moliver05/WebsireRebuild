@@ -41,7 +41,7 @@
     <div class="panel-body">
       <div>
         <div>
-          <label>Driver Name:</label>
+          <label>Rider Name:</label>
           <br>
           <input #newName>
         </div>
@@ -59,11 +59,11 @@
         </div>
   
         <div>
-          <label>Money earned:</label>
+          <label>Rides earned:</label>
           <br>
           <textarea #newMoney></textarea>
         </div>
-        <button (click)="submitForm(newName.value, newCar.value, newDescription.value, newMoney.value); newName.value=''; newCar.value=''; newDescription.value=''; newMoney.value=''">Add</button>
+        <button (click)="submitDriver(newName.value, newCar.value, newDescription.value, newMoney.value); newName.value=''; newCar.value=''; newDescription.value=''; newMoney.value=''">Add</button>
       </div>
     </div>
   </div>

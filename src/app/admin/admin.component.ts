@@ -17,9 +17,13 @@ export class AdminComponent implements OnInit {
 
   ngOnInit() {
   }
-  submitForm(name: string, car: string, description: string, money: number) {
+  submitDriver(name: string, car: string, description: string, money: number) {
     var newDrivers: Drivers = new Drivers(name, car, description, money);
     this.lyftService.addDrivers(newDrivers);
+  }
 
+  submitRider(name: string, car: string, description: string, money: number) {
+    var newRiders: Riders = new Riders(name, car, description, money);
+    this.lyftService.addRiders(newRiders);
   }
 }

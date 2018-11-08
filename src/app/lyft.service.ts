@@ -23,11 +23,11 @@ export class LyftService {
     }
 
     getRidersById(ridersId: string) {
-        return this.database.object('riders/' + ridersId);
+        return this.database.object('/riders/' + ridersId);
     }
     updateRiders(localUpdatedRiders) {
-        var albumEntryInFirebase = this.getRidersById(localUpdatedRiders.$key);
-        albumEntryInFirebase.update({
+        var riderEntryInFirebase = this.getRidersById(localUpdatedRiders.$key);
+        riderEntryInFirebase.update({
             name: localUpdatedRiders.name,
             car: localUpdatedRiders.car,
             description: localUpdatedRiders.description,
@@ -36,10 +36,9 @@ export class LyftService {
     }
 
     deleteRiders(localRidersToDelete) {
-        var albumEntryInFirebase = this.getDriversById(localRidersToDelete.$key);
-        albumEntryInFirebase.remove();
+        var riderEntryInFirebase = this.getDriversById(localRidersToDelete.$key);
+        riderEntryInFirebase.remove();
     }
-
 
     // Drivers
     getDrivers() {
@@ -50,11 +49,11 @@ export class LyftService {
     }
 
     getDriversById(driversId: string) {
-        return this.database.object('drivers/' + driversId);
+        return this.database.object('/drivers/' + driversId);
     }
     updateDrivers(localUpdatedDrivers) {
-        var albumEntryInFirebase = this.getDriversById(localUpdatedDrivers.$key);
-        albumEntryInFirebase.update({
+        var driverEntryInFirebase = this.getDriversById(localUpdatedDrivers.$key);
+        driverEntryInFirebase.update({
             name: localUpdatedDrivers.name,
             car: localUpdatedDrivers.car,
             description: localUpdatedDrivers.description,
@@ -62,7 +61,7 @@ export class LyftService {
         });
     }
     deleteDrivers(localDriversToDelete) {
-        var albumEntryInFirebase = this.getDriversById(localDriversToDelete.$key);
-        albumEntryInFirebase.remove();
+        var driverEntryInFirebase = this.getDriversById(localDriversToDelete.$key);
+        driverEntryInFirebase.remove();
     }
 }

@@ -1,3 +1,5 @@
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs/Observable';
 import { Component } from '@angular/core';
 import { AuthenticationService } from './authentication.service';
 import { Router} from '@angular/router';
@@ -9,6 +11,8 @@ import { Router} from '@angular/router';
   providers: [AuthenticationService]
 })
 export class AppComponent {
+  riders: Observable<any[]>;
+  drivers:  Observable<any[]>;
   user;
   private isLoggedIn: Boolean;
   private userName: String;
@@ -24,7 +28,6 @@ export class AppComponent {
          }
     });
   }
-
   login() {
     this.authService.login();
   }
