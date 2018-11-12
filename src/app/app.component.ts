@@ -1,9 +1,7 @@
-import { AngularFireDatabase } from 'angularfire2/database';
-import { Observable } from 'rxjs/Observable';
+import { RouterModule } from '@angular/router';
+import { routing } from './app.routing';
 import { Component } from '@angular/core';
 import { AuthenticationService } from './authentication.service';
-import { Router} from '@angular/router';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,23 +9,22 @@ import { Router} from '@angular/router';
   providers: [AuthenticationService]
 })
 export class AppComponent {
-  riders: Observable<any[]>;
-  drivers:  Observable<any[]>;
-  user;
   private isLoggedIn: Boolean;
   private userName: String;
+  router: any;
 
-    constructor(public authService: AuthenticationService, private router: Router) {
-       this.authService.user.subscribe(user => {
-         if (user == null) {
-           this.isLoggedIn = false;
-         } else {
-           this.isLoggedIn = true;
-           this.userName = user.displayName;
-           this.router.navigate([]);
-         }
+  constructor(public authService: AuthenticationService) {
+    this.authService.user.subscribe(user => {
+      if (user == null) {
+        this.isLoggedIn = false;
+        this.router.navigate(['public']);
+      } else {
+        this.isLoggedIn = true;
+        this.userName = user.displayName;
+      }
     });
   }
+
   login() {
     this.authService.login();
   }

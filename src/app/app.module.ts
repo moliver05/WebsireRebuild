@@ -1,4 +1,3 @@
-import { LyftService } from './lyft.service';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -22,6 +21,9 @@ import { AdminComponent } from './admin/admin.component';
 import { AuthGuard } from './auth-guard.service';
 import { EditRiderComponent } from './edit-rider/edit-rider.component';
 import { EditDriverComponent } from './edit-driver/edit-driver.component';
+import { PublicComponent } from './public/public.component';
+import { PrivateComponent } from './private/private.component';
+import { LoginComponent } from './login/login.component';
 
 
 export const firebaseConfig = {
@@ -42,6 +44,9 @@ export const firebaseConfig = {
     AdminComponent,
     EditRiderComponent,
     EditDriverComponent,
+    PublicComponent,
+    PrivateComponent,
+    LoginComponent,
 
   ],
   imports: [
@@ -53,7 +58,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [AuthGuard, AuthenticationService, LyftService],
+  providers: [AuthGuard, AuthenticationService],
   bootstrap: [AppComponent]
 })
 

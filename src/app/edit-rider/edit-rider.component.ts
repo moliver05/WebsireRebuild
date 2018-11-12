@@ -1,4 +1,4 @@
-import { LyftService } from '../lyft.service'
+import { LyftService } from '../lyft.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

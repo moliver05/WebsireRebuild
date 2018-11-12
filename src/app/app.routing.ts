@@ -1,3 +1,4 @@
+import { PublicComponent } from './public/public.component';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -9,11 +10,14 @@ import { DriverComponent } from './driver/driver.component';
 import { RiderComponent } from './rider/rider.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
-
 const appRoutes: Routes = [
     {
         path: '',
         component: WelcomeComponent
+    },
+    {
+        path: 'public',
+        component: PublicComponent
     },
     {
         path: 'admin',

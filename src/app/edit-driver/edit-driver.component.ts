@@ -5,7 +5,6 @@ import { LyftService } from './../lyft.service';
   selector: 'app-edit-driver',
   templateUrl: './edit-driver.component.html',
   styleUrls: ['./edit-driver.component.css']
- 
 })
 export class EditDriverComponent implements OnInit {
   @Input() selectedDriver;
@@ -18,7 +17,7 @@ export class EditDriverComponent implements OnInit {
     this.lyftservice.updateDrivers(driverToUpdate);
   }
   beginDeletingDriver(driverToDelete) {
-    if (confirm("Confirm")) {
+    if (confirm('Confirm')) {
       this.lyftservice.deleteDrivers(driverToDelete);
     }
   }

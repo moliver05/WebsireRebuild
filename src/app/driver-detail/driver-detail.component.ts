@@ -14,8 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class DriverDetailComponent implements OnInit {
   driversId: string;
   driversToDisplay;
-  provider: [LyftService]
-
+  provider: [LyftService];
   constructor(private route: ActivatedRoute, private location: Location, private lyftService: LyftService
   ) { }
 

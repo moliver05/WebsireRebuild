@@ -8,7 +8,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class LyftService {
     riders: FirebaseListObservable<any[]>;
     drivers: FirebaseListObservable<any[]>;
-    title = 'Lyft';
+
     constructor(private database: AngularFireDatabase) {
         this.riders = database.list('riders');
         this.drivers = database.list('drivers');
@@ -23,10 +23,10 @@ export class LyftService {
     }
 
     getRidersById(ridersId: string) {
-        return this.database.object('/riders/' + ridersId);
+        return this.database.object('riders/' + ridersId);
     }
     updateRiders(localUpdatedRiders) {
-        var riderEntryInFirebase = this.getRidersById(localUpdatedRiders.$key);
+        const riderEntryInFirebase = this.getRidersById(localUpdatedRiders.$key);
         riderEntryInFirebase.update({
             name: localUpdatedRiders.name,
             car: localUpdatedRiders.car,
@@ -36,7 +36,7 @@ export class LyftService {
     }
 
     deleteRiders(localRidersToDelete) {
-        var riderEntryInFirebase = this.getDriversById(localRidersToDelete.$key);
+        const riderEntryInFirebase = this.getDriversById(localRidersToDelete.$key);
         riderEntryInFirebase.remove();
     }
 
@@ -49,10 +49,10 @@ export class LyftService {
     }
 
     getDriversById(driversId: string) {
-        return this.database.object('/drivers/' + driversId);
+        return this.database.object('drivers/' + driversId);
     }
     updateDrivers(localUpdatedDrivers) {
-        var driverEntryInFirebase = this.getDriversById(localUpdatedDrivers.$key);
+        const driverEntryInFirebase = this.getDriversById(localUpdatedDrivers.$key);
         driverEntryInFirebase.update({
             name: localUpdatedDrivers.name,
             car: localUpdatedDrivers.car,
@@ -61,7 +61,7 @@ export class LyftService {
         });
     }
     deleteDrivers(localDriversToDelete) {
-        var driverEntryInFirebase = this.getDriversById(localDriversToDelete.$key);
+        const driverEntryInFirebase = this.getDriversById(localDriversToDelete.$key);
         driverEntryInFirebase.remove();
     }
 }
