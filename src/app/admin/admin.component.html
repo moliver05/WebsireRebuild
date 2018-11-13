@@ -1,44 +1,43 @@
+<br>
 <div class="container w3-section">
-  <div class="panel panel-default">
+  <div class="panel panel-primary">
     <div class="panel-heading">
       <h3 class="panel-title">Add New Driver</h3>
     </div>
     <div class="panel-body">
-      <div>
-        <div>
           <label>Driver Name:</label>
           <br>
           <input #newName>
         </div>
 
-        <div>
+        <div class="panel-body">
           <label>Car:</label>
           <br>
           <input #newCar>
         </div>
 
-        <div>
+        <div class="panel-body">
           <label>Description:</label>
           <br>
           <input #newDescription>
         </div>
 
-        <div>
+        <div class="panel-body">
           <label>Money earned:</label>
           <br>
           <textarea #newMoney></textarea>
         </div>
         <button (click)="submitDriver(newName.value, newCar.value, newDescription.value, newMoney.value); newName.value=''; newCar.value=''; newDescription.value=''; newMoney.value='' ">Add</button>
       </div>
-    </div>
-  </div>
 </div>
-<hr>
 
-<!-- <app-edit-driver [selectedDriver]="drivers"></app-edit-driver> -->
+<app-edit-driver [selectedDriver]="drivers"></app-edit-driver>
+<br>
+<hr style="border: solid black 2px;">
+<br>
 
 <div class="container w3-section">
-  <div class="panel panel-default">
+  <div class="panel panel-danger">
     <div class="panel-heading">
       <h3 class="panel-title">Add New Rider</h3>
     </div>
@@ -71,7 +70,5 @@
       </div>
     </div>
   </div>
-</div>
-<hr>
-
-<!-- <app-edit-rider [selectedRiders]="riders"></app-edit-rider> -->
+  </div>
+<app-edit-rider [selectedRider]="riders"></app-edit-rider>

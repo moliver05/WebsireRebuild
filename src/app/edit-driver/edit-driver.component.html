@@ -1,0 +1,24 @@
+<div class="container w3-section">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Update Driver</h3>
+        </div>
+        <div class="panel-body">
+            <label>New Driver Name:</label>
+            <input [(ngModel)]="selectedDriver.name">
+            <hr>
+            <label>New Driver's Car's:</label>
+            <input [(ngModel)]="selectedDriver.car">
+            <hr>
+            <label>New Driver's Description:</label>
+            <input [(ngModel)]="selectedDriver.description">
+            <hr>
+            <label>New Driver Salary:</label>
+            <input [(ngModel)]="selectedDriver.money">
+
+        </div>
+    </div>
+
+    <button class="btn btn-success" (click)="beginUpdatingDriver(selectedDriver)">Update</button>
+    <button class="btn btn-danger" (click)="beginDeletingDriver(selectedDriver)">Delete</button>
+    <br>

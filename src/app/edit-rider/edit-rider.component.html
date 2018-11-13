@@ -1,0 +1,23 @@
+<div class="container w3-section">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Update Rider</h3>
+        </div>
+        <div class="panel-body">
+            <label>New Rider Name:</label>
+            <input [(ngModel)]="selectedRider.name">
+            <hr>
+            <label>New Rider's Car's:</label>
+            <input [(ngModel)]="selectedRider.car">
+            <hr>
+            <label>New Rider's Description:</label>
+            <input [(ngModel)]="selectedRider.description">
+            <hr>
+            <label>New Rider Trips:</label>
+            <input [(ngModel)]="selectedRider.money">
+
+        </div>
+    </div>
+    <button class="btn btn-success" (click)="beginUpdatingRider(selectedRider)">Update</button>
+    <button class="btn btn-danger" (click)="beginDeletingRider(selectedRider)">Delete</button>
+    <br>

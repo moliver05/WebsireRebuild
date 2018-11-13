@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./edit-rider.component.css']
 })
 export class EditRiderComponent implements OnInit {
-  @Input() selectedRiders;
+  @Input() selectedRider;
 
   constructor(private lyftservice: LyftService) { }
 
@@ -17,7 +17,7 @@ export class EditRiderComponent implements OnInit {
     this.lyftservice.updateRiders(RidersToUpdate);
   }
   beginDeletingRiders(RidersToDelete) {
-    if (confirm("Confirm")) {
+    if (confirm('Confirm')) {
       this.lyftservice.deleteRiders(RidersToDelete);
     }
   }

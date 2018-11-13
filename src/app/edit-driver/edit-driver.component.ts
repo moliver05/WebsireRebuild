@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { LyftService } from './../lyft.service'; 
+import { LyftService } from './../lyft.service';
 
 @Component({
   selector: 'app-edit-driver',

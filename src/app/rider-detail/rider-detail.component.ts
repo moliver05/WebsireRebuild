@@ -13,7 +13,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class RiderDetailComponent implements OnInit {
   ridersId: string;
   ridersToDisplay;
-  provider: [LyftService]
+  provider: [LyftService];
 
   constructor(private route: ActivatedRoute, private location: Location, private lyftService: LyftService
   ) { }

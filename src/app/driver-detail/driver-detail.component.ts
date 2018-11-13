@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Riders } from '../riders.model';
 import { Drivers } from '../drivers.model';
 import { LyftService } from '../lyft.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';

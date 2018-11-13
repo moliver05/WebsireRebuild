@@ -12,7 +12,7 @@ import { LyftService } from '../lyft.service';
 
 })
 export class AdminComponent implements OnInit {
-
+  private user;
   constructor(private lyftService: LyftService) { }
 
   ngOnInit() {
